@@ -19,6 +19,7 @@
   "scripts": {
     "dev": "webpack serve --mode=development",
     "build": "webpack build --mode=production",
+    "analyze": "webpack build --mode=production --env analyze",
     "start": "servor dist index.html 8080",
     "format": "prettier --config ./.prettierrc.yml --write \"./src/**/*.ts?(x)\"",
     "lint": "eslint -c ./.eslintrc.yml \"./src/**/*.ts?(x)\""

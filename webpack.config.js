@@ -11,6 +11,7 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 
 module.exports = (env, options) => {
   const isDevelopment = options.mode !== 'production';
+  const enableAnalysis = Boolean(options.env.analyze)
   return {
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
@@ -80,7 +81,7 @@ module.exports = (env, options) => {
       new CleanWebpackPlugin(),
       new CompressionPlugin(),
       isDevelopment && new ReactRefreshWebpackPlugin(),
-      isDevelopment && new BundleAnalyzerPlugin()
+      enableAnalysis && new BundleAnalyzerPlugin()
     ].filter(Boolean),
   };
 };
