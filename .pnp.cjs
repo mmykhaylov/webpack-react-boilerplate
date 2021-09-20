@@ -76,6 +76,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["servor", "npm:4.0.2"],
             ["styled-components", "virtual:199531f6b29759a57b42847e938821571d0156f39a1ada70adf3344d9034b2003e6954ba92a14b5c58d326754d3ed3e22722ab79c44fadbb990e3c33eaf3a112#npm:5.3.1"],
             ["styled-normalize", "virtual:199531f6b29759a57b42847e938821571d0156f39a1ada70adf3344d9034b2003e6954ba92a14b5c58d326754d3ed3e22722ab79c44fadbb990e3c33eaf3a112#npm:8.0.7"],
+            ["terser-webpack-plugin", "virtual:199531f6b29759a57b42847e938821571d0156f39a1ada70adf3344d9034b2003e6954ba92a14b5c58d326754d3ed3e22722ab79c44fadbb990e3c33eaf3a112#npm:5.2.4"],
             ["ts-loader", "virtual:199531f6b29759a57b42847e938821571d0156f39a1ada70adf3344d9034b2003e6954ba92a14b5c58d326754d3ed3e22722ab79c44fadbb990e3c33eaf3a112#npm:9.2.5"],
             ["type-fest", "npm:2.3.2"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"],
@@ -12160,6 +12161,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["servor", "npm:4.0.2"],
             ["styled-components", "virtual:199531f6b29759a57b42847e938821571d0156f39a1ada70adf3344d9034b2003e6954ba92a14b5c58d326754d3ed3e22722ab79c44fadbb990e3c33eaf3a112#npm:5.3.1"],
             ["styled-normalize", "virtual:199531f6b29759a57b42847e938821571d0156f39a1ada70adf3344d9034b2003e6954ba92a14b5c58d326754d3ed3e22722ab79c44fadbb990e3c33eaf3a112#npm:8.0.7"],
+            ["terser-webpack-plugin", "virtual:199531f6b29759a57b42847e938821571d0156f39a1ada70adf3344d9034b2003e6954ba92a14b5c58d326754d3ed3e22722ab79c44fadbb990e3c33eaf3a112#npm:5.2.4"],
             ["ts-loader", "virtual:199531f6b29759a57b42847e938821571d0156f39a1ada70adf3344d9034b2003e6954ba92a14b5c58d326754d3ed3e22722ab79c44fadbb990e3c33eaf3a112#npm:9.2.5"],
             ["type-fest", "npm:2.3.2"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"],
@@ -12781,10 +12783,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:2be4a39e96441bba7854457995c42e0a775ed05a9dadf2063a8d448e60cacbeabea54a29fac4ec263168989e6d9fa1d6df64abafcea8b53c77712c31ba6c18a3#npm:5.2.4", {
-          "packageLocation": "./.yarn/__virtual__/terser-webpack-plugin-virtual-977888a655/0/cache/terser-webpack-plugin-npm-5.2.4-cc8bd7c055-ddbcdd28f9.zip/node_modules/terser-webpack-plugin/",
+        ["virtual:199531f6b29759a57b42847e938821571d0156f39a1ada70adf3344d9034b2003e6954ba92a14b5c58d326754d3ed3e22722ab79c44fadbb990e3c33eaf3a112#npm:5.2.4", {
+          "packageLocation": "./.yarn/__virtual__/terser-webpack-plugin-virtual-63c6da7e22/0/cache/terser-webpack-plugin-npm-5.2.4-cc8bd7c055-ddbcdd28f9.zip/node_modules/terser-webpack-plugin/",
           "packageDependencies": [
-            ["terser-webpack-plugin", "virtual:2be4a39e96441bba7854457995c42e0a775ed05a9dadf2063a8d448e60cacbeabea54a29fac4ec263168989e6d9fa1d6df64abafcea8b53c77712c31ba6c18a3#npm:5.2.4"],
+            ["terser-webpack-plugin", "virtual:199531f6b29759a57b42847e938821571d0156f39a1ada70adf3344d9034b2003e6954ba92a14b5c58d326754d3ed3e22722ab79c44fadbb990e3c33eaf3a112#npm:5.2.4"],
             ["@swc/core", null],
             ["@types/webpack", null],
             ["esbuild", null],
@@ -13370,7 +13372,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["neo-async", "npm:2.6.2"],
             ["schema-utils", "npm:3.1.1"],
             ["tapable", "npm:2.2.1"],
-            ["terser-webpack-plugin", "virtual:2be4a39e96441bba7854457995c42e0a775ed05a9dadf2063a8d448e60cacbeabea54a29fac4ec263168989e6d9fa1d6df64abafcea8b53c77712c31ba6c18a3#npm:5.2.4"],
+            ["terser-webpack-plugin", "virtual:199531f6b29759a57b42847e938821571d0156f39a1ada70adf3344d9034b2003e6954ba92a14b5c58d326754d3ed3e22722ab79c44fadbb990e3c33eaf3a112#npm:5.2.4"],
             ["watchpack", "npm:2.2.0"],
             ["webpack-cli", "virtual:199531f6b29759a57b42847e938821571d0156f39a1ada70adf3344d9034b2003e6954ba92a14b5c58d326754d3ed3e22722ab79c44fadbb990e3c33eaf3a112#npm:4.8.0"],
             ["webpack-sources", "npm:3.2.1"]

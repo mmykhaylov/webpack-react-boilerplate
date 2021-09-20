@@ -56,5 +56,10 @@ declare module '*.png' {
   export default ref;
 }
 
+declare module '*.webp' {
+  const ref: string;
+  export default ref;
+}
+
 /* FONTS */
 declare module '*.woff2';

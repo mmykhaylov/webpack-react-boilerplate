@@ -3,6 +3,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
@@ -11,7 +12,7 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 
 module.exports = (env, options) => {
   const isDevelopment = options.mode !== 'production';
-  const enableAnalysis = Boolean(options.env.analyze)
+  const enableAnalysis = Boolean(options.env.analyze);
   return {
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
@@ -49,7 +50,7 @@ module.exports = (env, options) => {
           ],
         },
         {
-          test: /\.(png|jpg|gif|svg|ico|woff2?)$/,
+          test: /\.(png|jpg|gif|svg|ico|webp|woff2?)$/,
           type: 'asset/resource',
         },
       ],
@@ -59,7 +60,14 @@ module.exports = (env, options) => {
     },
     optimization: {
       minimize: true,
-      minimizer: [new CssMinimizerPlugin(), '...'],
+      minimizer: [
+        new CssMinimizerPlugin(),
+        new TerserPlugin({
+          terserOptions: {
+            ecma: 2020,
+          },
+        }),
+      ],
     },
     devServer: {
       historyApiFallback: true,
@@ -81,7 +89,7 @@ module.exports = (env, options) => {
       new CleanWebpackPlugin(),
       new CompressionPlugin(),
       isDevelopment && new ReactRefreshWebpackPlugin(),
-      enableAnalysis && new BundleAnalyzerPlugin()
+      enableAnalysis && new BundleAnalyzerPlugin(),
     ].filter(Boolean),
   };
 };
